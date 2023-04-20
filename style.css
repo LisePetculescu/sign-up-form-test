@@ -1,0 +1,16 @@
+form {
+  display: table-caption;
+  margin-left: 2vw;
+}
+
+input {
+  padding: 2px;
+}
+
+#btn-submit {
+  background-color: rgb(59, 160, 59);
+}
+
+#btn-reset {
+  background-color: red;
+}
