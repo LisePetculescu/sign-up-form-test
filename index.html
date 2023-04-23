@@ -1,69 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up form</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Sign up here!</h1>
-    </header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign up form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Sign up here!</h1>
+  </header>
+  <br />
+  <section>
+    <form action="" method="get" id="signUp">
+      <label for="fullName">Fullname:</label>
+      <input type="text" id="fullName" name="fullname" />
+      <br />
+      <label for="img">img:</label>
+      <input type="url" id="img" name="img" />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <br />
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+      <br />
+      <label for="password2">Same password again:</label>
+      <input type="password" name="thePassword" id="password2" />
+      <br />
+      <br />
+      <label for="payment">Payment options:</label>
+      <br />
+      <input type="radio" name="pay" id="payFree" value="Free" />
+      <label for="payFree">Free</label>
+      <br />
+      <input type="radio" name="pay" id="payCheap" value="Cheap" />
+      <label for="payCheap">Cheap</label>
+      <br />
+      <input type="radio" name="pay" id="payFair" value="Fair" checked />
+      <label for="payFair">Fair</label>
+      <br />
+      <input type="radio" name="pay" id="payExp" value="Expensive" />
+      <label for="payExp">Expensive</label>
+      <br /><br />
+      <label for="payWhen">Pay every:</label>
+      <select name="payEvery" id="payWhen">
+        <option value="Week">Week</option>
+        <option value="month">Month</option>
+        <option value="year">Year</option>
+      </select>
+      <br />
+      <br />
+      <input type="checkbox" name="spam" id="getEmails" checked />
+      <label for="getEmails">I would like to recieve emails</label> <br />
+      <input type="checkbox" name="terms" id="terms" required />
+      <label for="terms">Terms & conditions ok</label>
+      <br />
+      <br />
+      <input type="submit" id="btn-submit" value="Sign up!" disabled />
+      <br />
+      <br />
+      <input type="reset" id="btn-reset" value="Start over" />
+    </form>
+  </section>
+  <!-- <form>
+    <label for="postTitle">Title:</label>
+    <input type="text" id="postTitle" name="postTitle" />
     <br />
-    <section>
-      <form action="" method="get" id="signUp">
-        <label for="fullName">Fullname:</label>
-        <input type="text" id="fullName" name="fullname" />
-        <br />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
-        <br />
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" />
-        <br />
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" />
-        <br />
-        <label for="password2">Same password again:</label>
-        <input type="password" name="thePassword" id="password2" />
-        <br />
-        <br />
-        <label for="payment">Payment options:</label>
-        <br />
-        <input type="radio" name="pay" id="payFree" value="Free" />
-        <label for="payFree">Free</label>
-        <br />
-        <input type="radio" name="pay" id="payCheap" value="Cheap" />
-        <label for="payCheap">Cheap</label>
-        <br />
-        <input type="radio" name="pay" id="payFair" value="Fair" checked />
-        <label for="payFair">Fair</label>
-        <br />
-        <input type="radio" name="pay" id="payExp" value="Expensive" />
-        <label for="payExp">Expensive</label>
-        <br /><br />
-        <label for="payWhen">Pay every:</label>
-        <select name="payEvery" id="payWhen">
-          <option value="Week">Week</option>
-          <option value="month">Month</option>
-          <option value="year">Year</option>
-        </select>
-        <br />
-        <br />
-        <input type="checkbox" name="spam" id="getEmails" checked />
-        <label for="getEmails">I would like to recieve emails</label> <br />
-        <input type="checkbox" name="terms" id="terms" required />
-        <label for="terms">Terms & conditions ok</label>
-        <br />
-        <br />
-        <input type="submit" id="btn-submit" value="Sign up!" disabled />
-        <br />
-        <br />
-        <input type="reset" id="btn-reset" value="Start over" />
-      </form>
-    </section>
-    <script src="script.js"></script>
-  </body>
+    <label for="postBody">Description:</label>
+    <input type="text" id="postBody" name="postBody" />
+    <br />
+    <label for="postImage">Image (URL):</label>
+    <input type="url" id="postImage" name="postImage" />
+    <br />
+  </form> -->
+  <script src="script.js"></script>
+</body>
+
 </html>
